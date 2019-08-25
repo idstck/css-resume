@@ -9,6 +9,12 @@ a:hover {
     text-decoration: none;
 }
 
+.content-wrap {
+    width: 950px; /*kalo pake width contentnya nanti keluar jalur pas resize*/
+    max-width: 950px;
+    margin: 0 auto;
+}
+
 /* Header and Footer */
 header, footer {
     background: #2B2D42;
