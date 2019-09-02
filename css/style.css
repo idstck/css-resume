@@ -1,6 +1,13 @@
 /* Global Style */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
-
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 a {
     color: #1b80a8;
@@ -10,18 +17,31 @@ a:hover {
 }
 
 .content-wrap {
-    width: 950px; /*kalo pake width contentnya nanti keluar jalur pas resize*/
+    /*width: 950px; /*kalo pake width contentnya nanti keluar jalur pas resize*/
     max-width: 950px;
     margin: 0 auto;
     overflow: auto;
+    padding: 2%;
+}
+
+.col-narrow {
+    width: 30%;
+    float: left;
+    /* border: 1px solid black; */
+    min-height: 175px;
+}
+
+.col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 50px;
+    /* border: 1px solid black; */
+    min-height: 175px;
 }
 
 /* Header and Footer */
 .profile-img {
-    width: 150px;
     border-radius: 50%;
-    float: left;
-    margin-right: 30px;
 }
 header, footer {
     background: #2B2D42;
